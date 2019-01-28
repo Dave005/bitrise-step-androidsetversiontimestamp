@@ -14,7 +14,7 @@ func main() {
 	versionname:= os.Getenv("input_version_name")
 
 	t:= time.Now()
-	timeString:= t.Format("0601021504")
+	timeString:= t.Format("06010215")
 
 	fmt.Println("input version code: 'versioncode' and versionname 'versionname'",versioncode,versionname)
 
