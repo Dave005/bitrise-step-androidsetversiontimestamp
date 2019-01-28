@@ -24,7 +24,7 @@ func main() {
 	// You can export Environment Variables for other Steps with
 	//  envman, which is automatically installed by `bitrise setup`.
 	// A very simple example:
-	cmdLog, err := exec.Command("bitrise", "envman", "add", "--key", "OUTPUT_VERSION_NAME", "--value", timeString).CombinedOutput()
+	cmdLog, err := exec.Command("bitrise", "envman", "add", "--key", "OUTPUT_VERSION_CODE", "--value", timeString).CombinedOutput()
 	if err != nil {
 		fmt.Printf("Failed to expose output with envman, error: %#v | output: %s", err, cmdLog)
 		os.Exit(1)
